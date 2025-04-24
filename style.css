@@ -24,8 +24,7 @@ body {
 }
 
 .result {
-  background: linear-gradient(to top, #4E21CA, #7857FF);
-  color: white;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));  color: white;
   text-align: center;
   padding: 30px;
 }
@@ -36,7 +35,7 @@ body {
 }
 
 .circle {
-  background: #4E21CA;
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   margin: 20px auto;
   width: 100px;
   height: 100px;
