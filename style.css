@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+  background-color: #ECF2FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 700px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.result {
+  background: linear-gradient(to top, #4E21CA, #7857FF);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.result h2 {
+  font-size: 1rem;
+  opacity: 0.75;
+}
+
+.circle {
+  background: #4E21CA;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circle h1 {
+  font-size: 2rem;
+}
+
+.circle p {
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+.result h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.result p {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.summary {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.summary h3 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.score-details {
+  display: flex;
+  gap: 5px;
+}
+.reaction { background: #FFF6F5; color: #D73C3C; }
+.memory { background: #FFFBF2; color: #EFAD23; }
+.verbal { background: #F2FBFA; color: #3A9F8F; }
+.visual { background: #F3F3FD; color: #4C4FC1; }
+
+.reaction .score-details .bolt{
+   color: #D73C3C;
+}
+
+.memory .score-details .brain{
+   color: #EFAD23;
+}
+.verbal .score-details .book{
+   color: #3A9F8F;
+}
+.visual .score-details .eye{
+   color: #4C4FC1;
+}
+.score span:last-child {
+  color: #666;
+}
+
+button {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #303B59;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #4E21CA, #7857FF);
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .result, .summary {
+    width: 50%;
+    padding: 40px;
+  }
+
+  .result {
+    border-radius: 20px 0 0 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+} 
