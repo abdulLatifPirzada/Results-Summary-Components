@@ -37,8 +37,8 @@ body {
 .circle {
   background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   margin: 20px auto;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -47,11 +47,11 @@ body {
 }
 
 .circle h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .circle p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   opacity: 0.75;
 }
 
